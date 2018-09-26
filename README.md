@@ -36,3 +36,9 @@ the container will run untill we exit bash
 sudo docker run -p 127.0.0.1:8080:80 -i ubuntu:14.04 nc -kl 80
 ```
 
+## Install Docker Compose on Linux systems
+
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+[Reference](https://docs.docker.com/compose/install/#install-compose)
