@@ -51,3 +51,18 @@ sudo docker run -p 8080:3000 -t <image>
 sudo curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 [Reference](https://docs.docker.com/compose/install/#install-compose)
+
+### Give permission to docker  and vagrant user
+
+```
+sudo chmod +x /usr/local/bin/docker-compose
+usermod -G docker vagrant
+
+```
+
+## Run docker compose
+
+```
+docker-compose build && docker-compose up db
+
+```
