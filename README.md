@@ -7,7 +7,7 @@ vagrant ssh
 ```
 
 ## Install Docker
-** this doesn't need to be done separately as it's added as part of provisioner in vagrantfile **
+**this doesn't need to be done separately as it's added as part of provisioner in vagrantfile**
 
 ```
 sudo apt-get install -y docker.io
