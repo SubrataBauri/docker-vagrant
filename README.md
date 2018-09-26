@@ -36,6 +36,15 @@ the container will run untill we exit bash
 sudo docker run -p 127.0.0.1:8080:80 -i ubuntu:14.04 nc -kl 80
 ```
 
+### Run index.js using docker build
+
+```
+docker build .
+sudo docker run -p 8080:3000 -t <image>
+
+```
+
+
 ## Install Docker Compose on Linux systems
 
 ```
