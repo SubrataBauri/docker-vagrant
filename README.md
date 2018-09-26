@@ -25,5 +25,7 @@ sudo docker run centos:7 /bin/echo 'Hello Docker'
 sudo docker run -t -i ubuntu:14.04 /bin/bash
 ```
 -i runs the container in interactive mode
+
 /bin/bash starts the bash shell
+
 the container will run untill we exit bash
