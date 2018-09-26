@@ -29,3 +29,10 @@ sudo docker run -t -i ubuntu:14.04 /bin/bash
 /bin/bash starts the bash shell
 
 the container will run untill we exit bash
+
+### We can serve web page from inside a container
+
+```
+sudo docker run -p 127.0.0.1:8080:80 -i ubuntu:14.04 nc -kl 80
+```
+
