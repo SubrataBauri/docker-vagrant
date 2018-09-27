@@ -105,7 +105,7 @@ docker-compose down
 ## Install docker machine
 
 ```
-curl -L https://github.com/docker/machine/releases/download/v0.14.0/docker-machine-$(uname -s)-$(uname -m) >/usr/local/bin/docker-machine && chmod +x /usr/local/bin/docker-machine
+curl -L "https://github.com/docker/machine/releases/download/v0.14.0/docker-machine-$(uname -s)-$(uname -m)" >/usr/local/bin/docker-machine && chmod +x /usr/local/bin/docker-machine
 
 
 ```
