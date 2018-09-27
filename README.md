@@ -66,3 +66,38 @@ usermod -G docker vagrant
 docker-compose build && docker-compose up db
 
 ```
+
+### Login to docker container if there is multi-VM environment error
+
+```
+vagrant ssh docker
+
+```
+
+## Start the application after database(mysql) is up and running
+
+```
+docker-compose up -d web
+
+```
+
+### Check if app is running and connected to db
+
+```
+curl http://localhost:3000
+
+```
+
+### Check dockerprocesses running
+
+```
+docker ps
+
+```
+
+## Bring the app and db down
+
+```
+docker-compose down
+
+```
